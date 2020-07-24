@@ -1658,6 +1658,7 @@
 // document.write (currencyDenomination());
 
 /////////////// Chapter No 42-48 ///////////////
+
 /////////////////   Task 1   ///////////////////
 // var link = document.createElement('a');
 // var textNode = document.createTextNode("Click Me");
@@ -1668,9 +1669,527 @@
 
 /// Task no 2
 
-var heading = document.createElement('h1');
-var link1 = document.createElement('a');
+// HTML
+
+// <!DOCTYPE html>
+// <html lang="en">
+// <head>
+//     <meta charset="UTF-8">
+//     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+//     <title>Document</title>
+//     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+//     <link rel="stylesheet" href="style.css">
+// </head>
+// <body>
+//     <h1>Assignment Two</h1>
+//     <h3>1. Show an alert box on click on a link</h3>
+
+//     <a href="#" id="btn">Link</a>
+//     <br><br>
 
 
+
+//     <h3>2. Display some Mobile images in browser. On click on an image Show the message in alert to user.</h3>
+//     <h2>Mobile Phone Lookup</h2>
+
+
+
+
+//     <div style="display: flex;">
+//     <div class="card mb-3" style="max-width: 540px;">
+//         <div class="row no-gutters">
+//           <div class="col-md-4">
+//             <img onclick="alertclick()" src="images/others/sam.png" class="card-img" alt="..."id="card-img" style="width: 127%; margin-top: 20px; margin: 25px 40px 0 -10px;">
+//           </div>
+//           <div class="col-md-8">
+//             <div class="card-body">
+//               <h5 class="card-title">Samsung Galaxy S20 Ultra</h5>
+//               <p class="card-text">This is a Phone</p>
+//             </div>
+//           </div>
+//         </div>
+//       </div>
+//       <div class="card mb-3" style="max-width: 540px;">
+//         <div class="row no-gutters">
+//           <div class="col-md-4">
+//             <img onclick="alertclick()" src="images/others/p40.jpg" class="card-img" id="card-img" alt="..." style="margin-top: 10px;">
+//           </div>
+//           <div class="col-md-8">
+//             <div class="card-body">
+//               <h5 class="card-title">Huawei P40 Pro Plus</h5>
+//               <p class="card-text">This is a Phone</p>
+//             </div>
+//           </div>
+//         </div>
+//       </div>
+//       <div class="card mb-3" style="max-width: 540px;">
+//         <div class="row no-gutters">
+//           <div class="col-md-4">
+//             <img onclick="alertclick()" src="images/others/iphone11promax.jpg" class="card-img" alt="..." id="card-img" style="width: 127%; margin-top: 20px; margin: 25px 40px 0 -10px;">
+//           </div>
+//           <div class="col-md-8">
+//             <div class="card-body">
+//               <h5 class="card-title">Apple Ihone 11 Pro Max</h5>
+//               <p class="card-text">This is a Phone</p>
+//             </div>
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   <script src="app.js"></script>
+//   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+// <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+// <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+// </body>
+// </html>
+
+
+//JAVASCRIPT
+
+
+// function alertclick() {
+//   alert("Thanks For Purchasing a Phone From Us");
+// }
+
+/////////////////   Task 3   ///////////////////
+
+//HTML
+
+// <!DOCTYPE html>
+// <html lang="en">
+// <head>
+//     <meta charset="UTF-8">
+//     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+//     <title>Document</title>
+//     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+//     <link rel="stylesheet" href="style.css">
+// </head>
+// <body>
+//     <h3>3. Display 10 student records in table and each row should contain a delete
+//       button. If you click on a button to delete a record, entire row should be
+//       deleted</h3>
+//     <table>
+//       <tr>
+//         <td>Ali</td>
+//         <td></td>
+//         <td>Class</td>
+//         <td></td>
+//         <td>Age</td>
+//       </tr>
+//       <tr>
+//         <td>Ahmed</td>
+//         <td></td>
+//         <td>4</td>
+//         <td></td>
+//         <td>Age</td>
+//         <td></td><td></td>
+//           <td><input type="button" value="Delete Row" onclick="deleteStudentRow(this)"></td>
+//       </tr>
+//       <tr>
+//         <td>Bila</td>
+//         <td></td>
+//         <td>6</td>
+//         <td></td>
+//         <td>Age</td>
+//         <td></td><td></td>
+//           <td><input type="button" value="Delete Row" onclick="deleteStudentRow(this)"></td>
+//       </tr>
+//       <tr>
+//         <td>Hamza</td>
+//         <td></td>
+//         <td>2</td>
+//         <td></td>
+//         <td>Age</td>
+//         <td></td><td></td>
+//           <td><input type="button" value="Delete Row" onclick="deleteStudentRow(this)"></td>
+//       </tr>
+//       <tr>
+//         <td>Ahmed</td>
+//         <td></td>
+//         <td>3</td>
+//         <td></td>
+//         <td>Age</td>
+//         <td></td><td></td>
+//         <td><input type="button" value="Delete Row" onclick="deleteStudentRow(this)"></td>
+//     </tr>
+//     <tr>
+//       <td>Danish</td>
+//       <td></td>
+//       <td>2</td>
+//       <td></td>
+//       <td>Age</td>
+//       <td></td><td></td>
+//         <td><input type="button" value="Delete Row" onclick="deleteStudentRow(this)"></td>
+//     </tr>
+//     <tr>
+//       <td>Hira</td>
+//       <td></td>
+//       <td>6</td>
+//       <td></td>
+//       <td>Age</td>
+//       <td></td><td></td>
+//         <td><input type="button" value="Delete Row" onclick="deleteStudentRow(this)"></td>
+//     </tr>
+//     <tr>
+//       <td>Ayesha</td>
+//       <td></td>
+//       <td>5</td>
+//       <td></td>
+//       <td>Age</td>
+//       <td></td><td></td>
+//       <td><input type="button" value="Delete Row" onclick="deleteStudentRow(this)"></td>
+//   </tr>
+//   <tr>
+//     <td>Amna</td>
+//     <td></td>
+//     <td>1</td>
+//     <td></td>
+//     <td>Age</td>
+//     <td></td>'<td></td>'
+//       <td><input type="button" value="Delete Row" onclick="deleteStudentRow(this)"></td>
+//   </tr>
+//   <tr>
+//     <td>Asif</td>
+//     <td></td>
+//     <td>3</td>
+//     <td></td>
+//     <td>Age</td>
+//     <td></td>
+//     <td></td>
+//       <td><input type="button" value="Delete Row" onclick="deleteStudentRow(this)"></td>
+//   </tr>
+//   <tr>
+//     <td>Adil</td>
+//     <td></td>
+//     <td>2</td>
+//     <td></td>
+//     <td>Age</td>
+//     <td></td>
+//     <td></td>
+//       <td><input type="button" value="Delete Row" onclick="deleteStudentRow(this)"></td>
+//   </tr>
+//    </table>
+//   <script src="app.js"></script>
+//   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+// <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+// <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+// </body>
+// </html>
+
+//JAVASCRIPT
+
+// function deleteStudentRow(o) {
+//   var p=o.parentNode.parentNode;
+//       p.parentNode.removeChild(p);
+//  }
+
+
+
+
+/////////////////   Task 4   ///////////////////
+
+// function changePictureOne() {
+//   document.getElementById("image").src = "data:image/png;base64,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";
+// }
+// function changePictureTwo() {
+//   document.getElementById("image").src = "/images/others/html5.png";
+  
+// }
+
+/////////////////   Task 5   ///////////////////
+
+//HTML
+
+// <!DOCTYPE html>
+// <html lang="en">
+// <head>
+//     <meta charset="UTF-8">
+//     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+//     <title>Document</title>
+//     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+//     <link rel="stylesheet" href="style.css">
+// </head>
+// <body>
+// <h3>5. Show a counter in browser. Counter should increase on click on increase
+//   button and decrease on click on decrease button. And show updated counter
+//   value in browser.</h3> <br>
+//   <h3 id="counterhead"></h3> <br> <br>
+//   <button onclick="decreasefunc()">Decrease Counter</button><button onclick="increasefunc()">Increase Counter</button>
+//   <br> 
+//   <script src="app.js"></script>
+//   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+// <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+// <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+// </body>
+// </html>
+
+
+//JAVASCRIPT
+
+// var i = 0;
+// document.getElementById("counterhead").innerHTML = i;
+// function increasefunc() {
+//   i++;
+//   document.getElementById("counterhead").innerHTML = i;
+  
+// }
+// function decreasefunc() {
+//   i -=1;
+//   document.getElementById("counterhead").innerHTML = i;
+  
+// }
+
+/////////////// Chapter No 49-52 ///////////////
+////TASK NO 1  /////
+
+//HTML
+
+// <!DOCTYPE html>
+// <html lang="en">
+// <head>
+//     <meta charset="UTF-8">
+//     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+//     <title>assignment</title>
+//     <style>
+//         body {font-family: Arial, Helvetica, sans-serif;}
+//         * {box-sizing: border-box}
+        
+
+//         input[type=text], input[type=password] {
+//           width: 100%;
+//           padding: 15px;
+//           margin: 5px 0 22px 0;
+//           display: inline-block;
+//           border: none;
+//           background: #f1f1f1;
+//         }
+        
+//         input[type=text]:focus, input[type=password]:focus {
+//           background-color: #ddd;
+//           outline: none;
+//         }
+        
+//         hr {
+//           border: 1px solid #f1f1f1;
+//           margin-bottom: 25px;
+//         }
+        
+
+//         button {
+//           background-color: rgb(40, 193, 231);
+//           color: white;
+//           padding: 14px 20px;
+//           margin: 8px 0;
+//           border: none;
+//           cursor: pointer;
+//           width: 100%;
+//           opacity: 0.9;
+//           margin-bottom: 50;
+//           font-weight: 900;
+//           font-size: 100%;
+//         }
+        
+//         button:hover {
+//           opacity:1;
+//         }
+        
+
+//         .nobtn {
+//           padding: 14px 20px;
+//           background-color: #f44336;
+//         }
+        
+
+//         .nobtn, .yesbtn {
+
+//           width: 30%;
+//           margin: 5px;
+//         }
+        
+//         .container {
+//           padding: 50px;
+//         }
+        
+
+
+//         .clearfix::after {
+//           content: "";
+//           clear: both;
+//           display: table;
+//         }
+        
+//         @media screen and (max-width: 300px) {
+//           .cancelbtn, .signupbtn {
+//              width: 100%;
+//           }
+//         }</style>
+// </head>
+// <body>
+//     <h1>1. Create a signup form and display form data in your web
+//         page on submission.</h1>
+//         <br><br>
+//         <form onsubmit="submitfunc()" style="border:1px solid #ccc">
+//             <div class="container">
+//               <h1>Sign Up</h1>
+//               <p>Please fill in this form to create an account.</p>
+//               <hr>
+                
+//               <label for="first"><b>First Name</b></label>
+//               <input id="firstnameinput" type="text" placeholder="Enter First Name" name="email" required>
+          
+//               <label for="last"><b>Last Name</b></label>
+//               <input id="lastnameinput" type="text" placeholder="Enter Last Name" name="email" required>
+          
+
+//               <label for="email"><b>Email</b></label>
+//               <input id="emailinput" type="text" placeholder="Enter Email" name="email" required>
+          
+//               <label for="psw"><b>Password</b></label>
+//               <input id="passwordinput" type="password" placeholder="Enter Password" name="psw" required>
+          
+//               <label for="psw-repeat"><b>Repeat Password</b></label>
+//               <input id="repeatpassinput" type="password" placeholder="Repeat Password" name="psw-repeat" required>
+              
+//               <label>
+//                 <input id="input" type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+//               </label>
+              
+//               <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+              
+//               <div class="clearfix">
+//                 <button type="button" class="nobtn" onclick="alert('Canceled')">Cancel</button>
+//                 <button type="button" class="yesbtn" onclick="submitfunc()">Sign Up</button>
+//               </div>
+//             </div>
+//           </form>
+//           <br><br>
+//           <h4 id="fullname"></h4><br>
+//           <h4 id="emailadd"></h4><br>
+//           <h4 id="pass"></h4><br>
+
+          
+//           <script src="app.js"></script>
+// </body>
+// </html>
+
+//JAVASCRIPT
+
+// function submitfunc() {
+//   var emailiinp = document.getElementById("emailinput").value;
+//   var passwordinp = document.getElementById("passwordinput").value;
+//   var repeatpassinp = document.getElementById("repeatpassinput").value;
+//   var firstname = document.getElementById("firstnameinput").value;
+//   var lastname = document.getElementById("lastnameinput").value;
+  
+//   if (passwordinp !== repeatpassinp) {
+//     alert("Your Passwords Do Not Match.");
+//   }else{
+//     document.write("First Name: " + firstname + "<br><br>");
+//     document.write("Last Name: " + lastname + "<br><br>");
+//     document.write("Fullname: " + firstname + " " + lastname + "<br><br>");
+//     document.write("Email: " + emailiinp + "<br><br>")
+//     document.write("Password: " + passwordinp + "<br><br>")
+//   }
+// }
+
+/////////////////   Task 2   ///////////////////
+
+//HTML
+
+// <!DOCTYPE html>
+// <html lang="en">
+// <head>
+//     <meta charset="UTF-8">
+//     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+//     <title>assignment</title>
+// </head>
+// <body>
+//     <div>
+//         <p id="parg">Lorem ipsum dolor sit amet</p>
+//         <button id="readm" onclick="parg(this)">read more</button>
+//     </div>
+//           <script src="app.js"></script>
+// </body>
+// </html>
+
+//JAVASCRIPT
+
+// function parg(e){
+//     var edittext = "Lorem ipsum dolor sit amet dolor ilet lorime aop hos hyteo sjaloe";
+//     document.getElementById("parg").innerHTML = edittext;
+// }
+
+
+/////////////////   Task 3   ///////////////////
+
+//HTML
+
+// <!DOCTYPE html>
+// <html lang="en">
+// <head>
+//     <meta charset="UTF-8">
+//     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+//     <title>Document</title>
+//     <link rel="stylesheet" href="style.css">
+// </head>
+// <body>
+    
+   
+//      <table id='tab'>
+//         <th>
+    
+//         </th>
+//         <tr>
+//             <td>0</td>
+//             <td class="namer">name</td>
+//             <td>10</td>
+//             <td><button onclick="del(this)">Delete</button></td>
+//             <td><button onclick="editItem(this)">edit</button></td>
+//         </tr>
+//         <tr>
+//             <td>2</td>
+//             <td class="namer">Johnnattan</td>
+//             <td>11</td>
+//             <td><button onclick="del(this)">Delete</button></td>
+//             <td><button onclick="del(this)">Delete</button></td>
+//         </tr>
+//         <tr>
+//             <td>3</td>
+//             <td class="namer">Johnny</td>
+//             <td>12</td>
+//             <td><button onclick="del(this)">Delete</button></td>
+//             <td><button onclick="del(this)">Delete</button></td>
+//         </tr>
+//     </table> 
+    
+
+//      <script src="app.js"></script>
+// </body>
+// </html>
+
+// TODO:this one
+
+// function del(a){
+//     var row = a.parentNode.parentNode;
+//     row.parentNode.removeChild(row)
+//  }
+
+//  var name1 = prompt("name1");
+//  var name2 = prompt("name2");
+//  var name3 = prompt("name3");
+//  var name4 = prompt("name4");
+ 
+// function editItem(e) {
+//     var val = e.parentNode.firstChild.nodeValue;
+//     var edittexter = prompt("Enter value", val);
+//     e.getElementsByTagName("p").nodeValue = edittexter;
+    
+// }
+
+
+
+
+/////// Chapter No 52-57 ///////////////
+////TASK NO 1
 
 
