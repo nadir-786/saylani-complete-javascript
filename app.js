@@ -2,6 +2,8 @@
 ////TASK NO 1  /////
 
 
+
+
 // alert("Welcome To Our Website");
 
 ////TASK NO 2  /////
@@ -2192,4 +2194,152 @@
 /////// Chapter No 52-57 ///////////////
 ////TASK NO 1
 
+//TODO:
 
+
+
+////TASK NO 2
+
+//HTML
+
+// <!DOCTYPE html>
+// <html lang="en">
+// <head>
+//     <meta charset="UTF-8">
+//     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+//     <title>Document</title>
+//     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+//     <link rel="stylesheet" href="style.css">
+//     <style>
+//         body button{
+//             background-color: black;
+//             border: none;
+//             color: white;
+//             transition: 0.3s ease;
+//         }
+//         button:hover{
+//             transition: 0.3s ease;
+//             background-color: white;
+//             color: black;
+//         }
+//         i{
+//             font-size: 30px !important;
+//             padding: 10px;
+//             color: white !important;
+//         }
+    
+//     </style>
+// </head>
+// <body>
+//     <p style="font-size: 130%;" id="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit.<br>
+//        voluptas omn asperiores voluptatum vitae quo, voluptatem <br>1
+//        Sapiente ducimus tempore quibusdam nostrum distinctio nulla labore<br>
+//        quaerat repellendus assumenda impedit voluptates veritatis corporis.</p>
+//    <button onclick="zoomout()"><i class="fa fa-minus"></i></button>
+//    <button onclick="zoomin()"><i class="fa fa-plus"></i></button>
+
+
+
+//            <script src="app.js"></script>
+       
+// </body>
+// </html>
+
+
+//Javascript
+// function zoomin(){
+//     var mypara = document.getElementById("para");
+//     var currfontsize = mypara.style.fontSize;
+//     currfontsize = currfontsize.slice(0, -2);
+//     currfontsize = parseInt(currfontsize)
+//     var reallsize;
+//     currfontsize += 10;
+//     reallsize = currfontsize + "px";
+//     mypara.style.fontSize = reallsize;
+//     console.log(reallsize);
+      
+
+// }
+
+// function zoomout(){
+//   var mypara = document.getElementById("para");
+//   var currfontsize = mypara.style.fontSize;
+//   currfontsize = currfontsize.slice(0, -2);
+//   currfontsize = parseInt(currfontsize)
+//   var reallsize;
+//   currfontsize -= 10;
+//   reallsize = currfontsize + "px";
+//   mypara.style.fontSize = reallsize;
+// }
+
+/////// Chapter No 58-67 ///////////////
+
+////TASK NO 1
+
+// i.Get element of id “main-content” and assign them in a variable.
+
+// var div = document.getElementById("main-content");
+
+// ii. Display all child elements of "main-content" element
+
+// var children = div.childNodes;
+// for (let i = 0; i < children.length; i++) {
+//     const element = children[i];
+//     document.write(element)
+// }
+
+// iii. Get all elements of class "render" and show their immerHTML in browser
+
+// var children = document.getElementsByClassName("render");
+
+// for (let i = 0; i < children.length; i++) {
+//     const element = children[i];
+//     document.write(element)
+// }
+
+// iv. fill input value whose element id first-name using javascript
+
+// document.getElementById("first-name").value = "Nadir"
+
+// v. Repeat part iv forid "last-name" and "email"
+
+// document.getElementById("last-name").value = "Ali"
+// document.getElementById("email").value = "abc@gmail.com"
+
+////TASK NO 2
+
+// i. What is the node type of element having id form-content?
+
+// var form = document.getElementById("form-content");
+// document.write("the node type of element having id form-content is ",form.nodeType);
+
+// ii. Show node type of element having id "lastName" and its child node.
+
+// var lastName = document.getElementById("lastName");
+// document.write("the node type of element having id form-content is ",lastName.nodeType);
+
+// iii. Update child node of element having id LastName.
+
+// var lastName = document.getElementById("lastName");
+// lastName.childNodes[0].textContent = "updated childnode"
+
+// iv. Get fitst and last child of id "main-content".
+
+// var div = document.getElementById("main-content");
+// document.write("The first child is ",div.firstChild);
+// document.write("The last child is ",div.lastChild);
+
+// v. Get next and previous sibling of id lastName.
+
+// var lastName = document.getElementById("lastName");
+// document.write("The next sibling of id lastNAme is ",lastName.nextSibling);
+// document.write("The previous sibling of id lastNAme is ",lastName.previousSibling) ;
+
+// v. Get parent node and node tyoe of element having id email.
+
+// var email = document.getElementById("email");
+// var parentNode = email.parentNode;
+// var parentNodeType = parentNode.nodeType;
+
+// document.write("The paremt mode of element having id email : ",parentNode) ;
+// document.write("The paremt mode type of element having id email : ",parentNodeType) ;
