@@ -1535,7 +1535,7 @@
 // }
 // mainFunction();
 
-/////////////////   Task 4   ///////////////////
+/////////////////   Task 5   ///////////////////
 
 // function indexOf(string, character) {
 //     let i=0;
@@ -2169,7 +2169,7 @@
 // </body>
 // </html>
 
-// TODO:this one
+//Javascript
 
 // function del(a){
 //     var row = a.parentNode.parentNode;
@@ -2194,8 +2194,204 @@
 /////// Chapter No 52-57 ///////////////
 ////TASK NO 1
 
-//TODO:
 
+//HTML
+
+// <!DOCTYPE html>
+// <html lang="en">
+// <head>
+//     <meta charset="UTF-8">
+//     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+//     <title>Modal</title>
+//     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+// <style>
+//         .modal {
+//             display: none; 
+//             position: fixed; 
+//             z-index: 1; 
+//             padding-top: 100px; 
+//             left: 0;
+//             top: 0;
+//             width: 100%; 
+//             height: 100%; 
+//             overflow: auto; 
+//             background-color: rgb(0,0,0);
+//             background-color: rgba(0,0,0,0.4); 
+//             transition: 1S ease;
+//             }
+
+//             .modalcont {
+//             background-color: #fefefe;
+//             margin: auto;
+//             padding: 20px;
+//             border: 1px solid #888;
+//             width: 80%;
+//             transition: 1S ease;
+//             }
+
+
+//             .closedopen {
+//             color: #aaaaaa;
+//             float: right;
+//             font-size: 28px;
+//             font-weight: bold;
+//             display: none;
+//             transition: 1S ease;
+//             }
+
+//             i:hover,
+//             i:focus {
+//             font-size: larger;
+//             text-decoration: none;
+//             cursor: pointer;
+//             transition: 0.5S ease;
+//             }
+//             .modalimg{
+//                 margin: 1% 1% !important;
+//                 display: inline-flex;
+
+
+//             }
+//             img{
+//                 height: 200px;
+                
+                
+
+//             }
+//             .closedopen{
+//                 position: fixed;
+//                 transition: 1S ease;
+
+
+//                 z-index: 1; 
+//                 padding-top: 100px; 
+//                 left: 0;
+//                 top: 0;
+//                 margin-top: -10%;
+//                 width: 100%;
+//                 height: 100%;
+//                 overflow: scroll;
+//                 background-color: rgb(0,0,0);
+//                 background-color: rgba(0,0,0,0.5);
+//                 margin: 10px 10px;
+//                 background-size: 100%;
+//                 text-align: center;
+    
+                
+
+//             }
+//             .closedopen img{
+//                 animation: zoomeffect 1s forwards ease;
+//                 transition: 1S ease;
+    
+//             }
+//             .closedopen img{
+//                 width: 50%;
+//                 height: 50%;
+//                 text-align: center;
+//             }
+//             .modalooo span{
+//                 display: none;
+
+//             }
+//             .closedopen{
+//                 display: block;
+//                 color: #aaaaaa;
+//                 float: right;
+//                 font-size: 28px;
+//                 font-weight: bold;
+//             }
+//             img{
+//                 cursor: pointer;
+//             }
+//             @keyframes zoomeffect{
+//             0%{
+//                 transform: scale(0.1) translateX(-150PX) translateY(90%);
+
+        
+//                 }
+//             100%{
+//                 transform: scale(1) translateX(0) translateY(0);
+
+//                 }
+                
+// }
+// i{
+//     transition: 0.5S ease;
+// }
+// .close{
+//     font-size: 50px !important;
+//     color: black;
+//     font-weight: bold;
+
+// }
+
+//     </style>
+// </head>
+// <body>
+//     <div class="divbody">
+//     <h1 style="text-align: center; font-size: 300%; font-family: monospace; font-weight: 800;">Modal</h1>
+//  <div style="display: inline-flex; align-content: center; width: 100%; text-align: center;">
+//     <div style="text-align: center; width: 100% !important; align-self: center;">
+//     <div class="modalooo modalimg" id="modimg">
+//         <span onclick="modaler(this)" class="close" id="close"><i class="fa fa-window-close"></i></span>
+//         <img src="images/others/1.jpg" alt="" class="modalimg" id="modalimged">
+//     </div>
+//             <div class="modalooo modalimg" id="modimg">
+//                 <span onclick="modaler(this)" class="close" id="close"><i class="fa fa-window-close"></i></span>
+//     <img src="images/others/6.jpg" alt="" class="modalimg" id="modalimgedone">
+//     </div>
+//     <div class="modalooo modalimg" id="modimg">
+//         <span onclick="modaler(this)" class="close" id="close"><i class="fa fa-window-close"></i></span>
+//     <img src="images/others/3.jpg" alt="" class="modalimg" id="modalimgedtwo">
+//     </div>
+//     <div class="modalooo modalimg" id="modimg">
+//         <span onclick="modaler(this)" class="close" id="close"><i class="fa fa-window-close"></i></span>
+//     <img src="images/others/4.png" alt="" class="modalimg" id="modalimgedthree">
+//     </div>
+//     <div class="modalooo modalimg"id="modimg">
+//         <span onclick="modaler(this)" class="close" id="close"><i class="fa fa-window-close"></i></span>
+//     <img src="images/others/5.jpg" alt="" class="modalimg" id="modalimgedfour">
+//     </div>
+//     </div>
+// </div>
+
+
+// <div id="modal" class="modal">
+
+//   <div class="modalcont">
+//     <span class="close">&times;</span>
+
+
+// </div>
+// </div>
+
+//     <script src="app.js"></script>
+// </body>
+// </html>
+
+//JAVASCRIPT
+// var modalele = document.getElementById("modalimged");
+// modalele.addEventListener("click", modalered);
+// var modalele = document.getElementById("modalimgedone");
+// modalele.addEventListener("click", modalered);
+// var modalele = document.getElementById("modalimgedtwo");
+// modalele.addEventListener("click", modalered);
+// var modalele = document.getElementById("modalimgedthree");
+// modalele.addEventListener("click", modalered);
+// var modalele = document.getElementById("modalimgedfour");
+// modalele.addEventListener("click", modalered);
+// function modaler(para) {
+//   var modal = para.parentNode;
+//   modal.classList.remove('closedopen')
+//   modal.classList.add("modalooo")
+// }
+// function modalered() {
+//   var modal = this.parentNode;
+//   modal.classList.remove('modalooo')
+//   modal.classList.add("closedopen")
+// }
 
 
 ////TASK NO 2
